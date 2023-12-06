@@ -1,0 +1,16 @@
+[
+    {
+        "arguments": [
+            "c++",
+            "-c",
+            "-Wall",
+            "-g",
+            "-Iinclude",
+            "-o",
+            "obj/Shell_Sort.o",
+            "src/Shell_Sort.cpp"
+        ],
+        "directory": "/data/home/wenquanshan/MyProjects/SortingAlgorithmDemo",
+        "file": "src/Shell_Sort.cpp"
+    }
+]
