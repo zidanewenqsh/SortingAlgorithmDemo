@@ -29,8 +29,8 @@ My Sorting Algorithm Demo Project
 ## 编译和运行
 1. 克隆项目：
    ```bash
-   git clone [项目仓库URL]
-   cd [项目文件夹]
+   git clone https://github.com/zidanewenqsh/SortingAlgorithmDemo.git
+   cd SortingAlgorithmDemo
 
 1. 编译项目：
 

@@ -2,7 +2,8 @@
 #include "header.h"
 template <typename T>
 void heapSort(vector<T>& arr, int start, int end) {
-    // make_heap
+    // 构建最大堆（make_heap）
+    // 在这一阶段，从数组的中间位置开始向前遍历，处理每个非叶子节点。对于每个节点，如果它大于其父节点，则将其与父节点交换，直至满足最大堆的性质
     int mid = start + ((end - start + 1) >> 1);
     for (int i = end; i >= mid; i--) {
         int ind = i, parent = start + ((ind - start - 1) >> 1);
@@ -11,8 +12,8 @@ void heapSort(vector<T>& arr, int start, int end) {
             ind = parent, parent = start + ((ind - start - 1) >> 1);
         }
     }
-    // pop_heap
-    // end = (end - start);
+    // 执行排序（pop_heap）
+    // 在排序阶段，不断将堆顶元素（即当前最大元素）与堆的最后一个元素交换，并减少堆的大小。每次交换后，它重新调整剩余的堆，以确保堆顶元素是最大的。
     while (end > start) {
         swap(arr[start], arr[end--]); // pop
         int ind = start, child = start + ((ind - start) << 1) + 1;
